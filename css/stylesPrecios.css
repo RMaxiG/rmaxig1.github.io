@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ========== TITULOS ========== */
+h1 {
+  color: #38bdf8;
+  margin: 0;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #020617;
+  position: relative;
+  overflow: visible;
+}
+
+
+header img {
+  height: 60px;
+  flex: 1;
+}
+
+
+header>a {
+  flex: 2;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.logo-container,
+nav {
+  flex: 1;
+}
+
+.title-link {
+  flex: 2;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* ========== MENU ========== */
+details {
+  position: relative;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details ul {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+  list-style: none;
+  min-width: 180px;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+details[open] ul {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+details li {
+  margin: 8px 0;
+}
+
+details a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+details a:hover {
+  color: white;
+}
+
+footer {
+  background: #07081b;
+  padding: 30px;
+}
+
+.redes-sociales {
+  text-align: center;
+  flex: 1;
+}
+
+.redes-sociales h3 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.iconos-redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #1e293b;
+  color: #38bdf8;
+  text-decoration: none;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 1px solid #334155;
+}
+
+.iconos-redes a:hover {
+  background: #38bdf8;
+  color: #020617;
+  transform: translateY(-3px);
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+footer input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+footer button {
+  padding: 10px 15px;
+  border: none;
+  background: #38bdf8;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: #020617;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+footer button:hover {
+  background: #0ea5e9
+}
+
+
+.mapa {
+  width: 100%;
+  /* Ocupa el ancho de su contenedor */
+  max-width: 400px;
+  /* Límite para que no se vea gigante en PC */
+  height: 150px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: grayscale(0.2) contrast(1.1);
+  /* Estética que combina con tu modo oscuro */
+  transition: 0.3s;
+}
+
+.mapa:hover {
+  filter: grayscale(0);
+  /* Al pasar el mouse recupera todo el color */
+}
+
+@media (max-width: 600px) {
+  .footer-contenido {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .mapa {
+    margin-left: 0;
+  }
+}
+
+/* ========== CONTENEDOR ========== */
+.precios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.precios h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+/* ========== TABLA ========== */
+.tabla-container {
+  overflow-x: auto;
+}
+
+.tabla-precios {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* encabezado */
+.tabla-precios thead {
+  background: #020617;
+}
+
+.tabla-precios th {
+  padding: 15px;
+  color: #38bdf8;
+}
+
+/* celdas */
+.tabla-precios td {
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.tabla-precios tbody tr {
+  transition: 0.3s;
+}
+
+.tabla-precios tbody tr:hover {
+  background: #334155;
+  transform: scale(1.02);
+}
+
+/* ========== TOOLTIP ========== */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* texto oculto */
+.tooltip span {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #020617;
+  color: #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* flechita */
+.tooltip span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #020617;
+}
+
+
+.tooltip:hover span {
+  opacity: 1;
+}
+
+
+@media(max-width:600px) {
+  .tabla-precios {
+    font-size: 0.9rem;
+  }
+}

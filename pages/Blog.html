@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesBlog.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Gobierno de Jujuy">
+            <link rel="icon" href="../img/logo2.png">
+        </div>
+        <a href="/pages/Home.html" class="title-link">
+            <h1>Ministerio de Turismo de JUJUY </h1>
+        </a>
+        <nav>
+            <details>
+                <summary>Menú</summary>
+                <ul>
+                    <li><a href="Destinos.html">Destinos</a></li>
+                    <li><a href="Agencias.html">Agencias</a></li>
+                    <li><a href="Precios.html">Precios</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
+
+    <input type="radio" name="tag" id="todos" checked>
+    <input type="radio" name="tag" id="cultura">
+    <input type="radio" name="tag" id="naturaleza">
+    <input type="radio" name="tag" id="aventura">
+
+    <section class="filtros">
+        <label for="todos">Todos</label>
+        <label for="cultura">Cultura</label>
+        <label for="naturaleza">Naturaleza</label>
+        <label for="aventura">Aventura</label>
+    </section>
+
+    <main class="blog">
+        <article class="articulo grande cultura">
+            <img src="../img/Purmamarca.jfif" alt="Purmamarca">
+            <div class="contenido">
+                <span class="tag-label">DESTACADO</span>
+                <h2>Purmamarca y el Cerro de los 7 colores</h2>
+                <p>En un día en Purmamarca, puedes disfrutar del imponente Cerro de los Siete Colores desde la plaza
+                    principal. Es imperdible caminar por el Paseo de los Colorados y recorrer la feria artesanal.</p>
+            </div>
+        </article>
+
+        <article class="articulo naturaleza">
+            <img src="../img/Calilegua.webp" alt="Calilegua">
+            <div class="contenido">
+                <h3>Parque Calilegua</h3>
+                <p>Selva y biodiversidad en estado puro en las yungas jujeñas,
+                    un espacio natural de alto valor natural y cultural, poco alterado por la actividad humana que, en
+                    razón de sus excepcionales valores naturales, de su carácter representativo, la singularidad de su
+                    flora, de su fauna o de sus formaciones geomorfológicas, merece su conservación una atención
+                    preferente y se declara de interés general de la Nación por ser representativo del patrimonio
+                    natural español.
+                </p>
+            </div>
+        </article>
+
+        <article class="articulo aventura">
+            <img src="../img/Salar.jfif" alt="Salar">
+            <div class="contenido">
+                <h3>Salar de Olaroz</h3>
+                <p>Una experiencia visual única en la inmensidad de la puna.
+                    El Salar de Olaroz, ubicado en la Puna jujeña a más de 4000 msnm, destaca por su inmenso paisaje
+                    blanco, el Parque Solar Cauchari (el más alto del mundo) y el Centro de Interpretación Olaroz,
+                    gestionado por la comunidad local. Es un destino ideal para turismo de naturaleza y de litio,
+                    accesible por la Ruta 52
+                </p>
+            </div>
+        </article>
+
+        <article class="articulo cultura">
+            <img src="../img/Cabildo.png" alt="Cabildo">
+            <div class="contenido">
+                <h3>El Cabildo de Jujuy</h3>
+                <p>El Cabildo es un homenaje a nuestra identidad, a nuestra cultura y a nuestra gente. Es un lugar donde
+                    podrán venir generaciones futuras para aprender, para recordar y para inspirarse. Un espacio que nos
+                    pertenece a todos, un lugar donde podemos sentirnos orgullosos de nuestra historia y de nuestro
+                    patrimonio.</p>
+            </div>
+        </article>
+
+        <article class="articulo naturaleza">
+            <img src="../img/Refugio.jfif" alt="Refugio">
+            <div class="contenido">
+                <h3>Refugio del Tapir</h3>
+                <p>Es un estrecho entre montañas por donde escurre un cauce de agua cristalina; los piletones donde cae
+                    este agua dejan ver tonos verde marino y turquesas, y las paredes de piedras que los contienen están
+                    adornadas con centenares de plantas colgando que se estiran buscando los rayos del sol.
+                    Este lugar es realmente muy hermoso, y mucho más si se lo visita en los meses de lluvias (diciembre
+                    a marzo/abril) que es donde el agua escurre.
+                </p>
+            </div>
+        </article>
+        <article class="articulo aventura">
+            <img src="../img/Garganta-del-Diablo.jfif" alt="GdD">
+            <div class="contenido">
+                <h3>Cascada Garganta del Diablo</h3>
+                <p>La caminata a la Cascada Garganta del Diablo en Tilcara, Jujuy, es una excursión popular de
+                    dificultad baja/media que lleva a una cascada de 15 metros. El sendero principal es un ascenso de 4
+                    a 6 km desde el pueblo (aprox. 1 hora) o se puede llegar en vehículo, seguido de una caminata de
+                    20-30 minutos por el lecho del río</p>
+            </div>
+        </article>
+
+        <aside class="sidebar-news">
+            <h2>ÚLTIMO MOMENTO</h2>
+            <div class="breve">
+                <span>12:00</span>
+                <p>Habilitan nuevo sendero en el Hornocal.</p>
+            </div>
+            <div class="breve">
+                <span>09:30</span>
+                <p>Fiesta de la Pacha: Cronograma de agosto disponible.</p>
+            </div>
+            <div class="breve">
+                <span>Ayer</span>
+                <p>Corte preventivo en Cuesta del Lipán por mantenimiento.</p>
+            </div>
+        </aside>
+
+        <section class="comentarios">
+            <h3>Comunidad Jujeña</h3>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #38bdf8;"></div>
+                <p><strong>Mateo:</strong> ¡El Hornocal es de otro planeta! Vayan a la tarde para ver los colores bien
+                    encendidos.</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #fbbf24;"></div>
+                <p><strong>Valentina:</strong> La comida en Tilcara es riquísima. No se vayan sin probar las empanadas
+                    de carne cortada a cuchillo.</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #34d399;"></div>
+                <p><strong>Ricardo:</strong> Caminar por las Salinas Grandes al atardecer fue la mejor experiencia de mi
+                    vida. ¡Lleven anteojos de sol!</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #f87171;"></div>
+                <p><strong>Sofía:</strong> El trekking en las Yungas (Calilegua) es increíble. El cambio de paisaje de
+                    la Puna a la selva es total.</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #a78bfa;"></div>
+                <p><strong>Bautista:</strong> Los artesanos en la plaza de Purmamarca tienen cosas hermosas. Me traje
+                    unos tejidos de llama espectaculares.</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #fb7185;"></div>
+                <p><strong>Elena:</strong> Fui para el Enero Tilcareño y el ambiente es único. ¡Mucha cultura y mucha
+                    alegría!</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #2dd4bf;"></div>
+                <p><strong>Marcos:</strong> La subida a la Cuesta del Lipán da un poco de vértigo pero las vistas valen
+                    cada segundo.</p>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar" style="background: #f472b6;"></div>
+                <p><strong>Julieta:</strong> ¡Jujuy siempre sorprende! Es la tercera vez que vengo y siempre descubro un
+                    pueblito nuevo.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <input type="email" placeholder="Tu email">
+                <button>Enviar</button>
+            </div>
+
+            <div class="redes-sociales">
+                <h3>Seguinos</h3>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/VisitJujuyOfficial" aria-label="Facebook">FB</a>
+                    <a href="https://www.instagram.com/visitjujuy/" aria-label="Instagram">IG</a>
+                    <a href="https://x.com/VisitJujuy" aria-label="X">X</a>
+                </div>
+            </div>
+
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1841315.6582522434!2d-67.57564756543167!3d-23.31557088998188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9408a2879577c385%3A0x6009a29631248f3b!2sJujuy!5e0!3m2!1ses-419!2sar!4v1713000000000!5m2!1ses-419!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Turismo Jujuy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

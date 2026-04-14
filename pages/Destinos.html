@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesDestinos.css">
+    <link rel="icon" href="../img/logo2.png">
+    <title>Destinos</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="">
+        </div>
+
+        <a href="/pages/Home.html" class="title-link">
+            <h1>Ministerio de Turismo de JUJUY</h1>
+        </a>
+
+        <nav>
+            <details>
+                <summary>Menú</summary>
+                <ul>
+                    <li><a href="Destinos.html">Destinos</a></li>
+                    <li><a href="Agencias.html">Agencias</a></li>
+                    <li><a href="Precios.html">Precios</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+
+                </ul>
+            </details>
+        </nav>
+    </header>
+
+    <!-- FILTROS -->
+    <section class="filtros">
+
+        <input type="radio" name="region" id="todos" checked>
+        <label for="todos">Todos</label>
+
+        <input type="radio" name="region" id="puna">
+        <label for="puna">Puna</label>
+
+        <input type="radio" name="region" id="quebrada">
+        <label for="quebrada">Quebrada</label>
+
+        <input type="radio" name="region" id="yungas">
+        <label for="yungas">Yungas</label>
+
+        <input type="radio" name="region" id="valles">
+        <label for="valles">Valles</label>
+
+        <!-- GRID -->
+        <div class="grid">
+
+            <!-- PUNA -->
+            <div class="card puna">
+                <img src="../img/Salar.jfif">
+                <div class="info">
+                    <h3>Salar de Olaroz</h3>
+                    <p>Paisaje único de sal</p>
+                    <p>Desde $40.000</p>
+                </div>
+            </div>
+
+            <div class="card puna">
+                <img src="../img/Iglesia-de-Susques.jpg">
+                <div class="info">
+                    <h3>Susques</h3>
+                    <p>Iglesia histórica</p>
+                    <p>Desde $30.000</p>
+                </div>
+            </div>
+
+            <!-- QUEBRADA -->
+            <div class="card quebrada">
+                <img src="../img/Purmamarca.jfif">
+                <div class="info">
+                    <h3>Purmamarca</h3>
+                    <p>Cerro de los 7 colores</p>
+                    <p>Desde $25.000</p>
+                </div>
+            </div>
+
+            <div class="card quebrada">
+                <img src="../img/Tilcara.jpg">
+                <div class="info">
+                    <h3>Tilcara</h3>
+                    <p>Cultura e historia</p>
+                    <p>Desde $23.000</p>
+                </div>
+            </div>
+
+            <!-- YUNGAS -->
+            <div class="card yungas">
+                <img src="../img/Calilegua.webp">
+                <div class="info">
+                    <h3>Parque Calilegua</h3>
+                    <p>Selva y biodiversidad</p>
+                    <p>Desde $10.000</p>
+                </div>
+            </div>
+
+            <div class="card yungas">
+                <img src="../img/Refugio.jfif">
+                <div class="info">
+                    <h3>Refugios naturales</h3>
+                    <p>Tranquilidad total</p>
+                    <p>Desde $10.000</p>
+                </div>
+            </div>
+
+            <!-- VALLES -->
+            <div class="card valles">
+                <img src="../img/Cabildo.png">
+                <div class="info">
+                    <h3>Cabildo</h3>
+                    <p>Centro histórico</p>
+                    <p>Desde $5.000</p>
+                </div>
+            </div>
+
+            <div class="card valles">
+                <img src="../img/Catedral_de_Jujuy.webp">
+                <div class="info">
+                    <h3>Catedral</h3>
+                    <p>Arquitectura colonial</p>
+                    <p>Desde $5.000</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-contenido">
+
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <input type="email" placeholder="Tu email">
+                <button>Enviar</button>
+            </div>
+
+            <div class="redes-sociales">
+                <h3>Seguinos</h3>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/VisitJujuyOfficial" aria-label="Facebook">FB</a>
+                    <a href="https://www.instagram.com/visitjujuy/" aria-label="Instagram">IG</a>
+                    <a href="https://x.com/VisitJujuy" aria-label="X">X</a>
+                </div>
+            </div>
+
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1841315.6582522434!2d-67.57564756543167!3d-23.31557088998188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9408a2879577c385%3A0x6009a29631248f3b!2sJujuy!5e0!3m2!1ses-419!2sar!4v1713000000000!5m2!1ses-419!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Turismo Jujuy. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
