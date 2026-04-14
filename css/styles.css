@@ -136,15 +136,6 @@ details a:hover {
   object-fit: cover;
 }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: bisque;
-  text-align: center;
-  animation: fadeIn 2s ease;
-}
 
 /* ========== DESTINOS (CARDS) ========== */
 .destinos {
@@ -269,16 +260,37 @@ details a:hover {
     transform: translateY(0);
   }
 }
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: bisque;
+  text-align: center;
+  text-transform: uppercase;
+  /* La animación dura 6 segundos en total */
+  animation: cinematicExit 6s ease-in-out forwards;
+}
 
-@keyframes fadeIn {
-  from {
+@keyframes cinematicExit {
+  0% {
     opacity: 0;
+    letter-spacing: -5px;
+    filter: brightness(2);
   }
-
-  to {
+  20%, 80% { /* Se mantiene visible entre el 20% y el 80% del tiempo */
     opacity: 1;
+    letter-spacing: 5px;
+    filter: brightness(1);
+  }
+  100% {
+    opacity: 0;
+    letter-spacing: 10px; /* Sigue expandiéndose mientras desaparece */
+    filter: brightness(0);
+    visibility: hidden; /* Evita que interfiera con clics después de irse */
   }
 }
+
 
 .testimonios {
   width: 100%;
