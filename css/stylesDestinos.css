@@ -309,19 +309,15 @@
 
  .mapa {
    width: 100%;
-   /* Ocupa el ancho de su contenedor */
    max-width: 400px;
-   /* Límite para que no se vea gigante en PC */
    height: 150px;
    border: none;
    border-radius: 12px;
    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
    filter: grayscale(0.2) contrast(1.1);
-   /* Estética que combina con tu modo oscuro */
    transition: 0.3s;
  }
 
  .mapa:hover {
    filter: grayscale(0);
-   /* Al pasar el mouse recupera todo el color */
  }
